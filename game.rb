@@ -29,7 +29,7 @@ class Game
   end
 
   def is_next?
-    return !(p1.score == 3 || p2.score == 3)
+    return (p1.score == 3 || p2.score == 3 || p2.lives == 0 || p1.lives == 0)
   end
 
   def who_won?
